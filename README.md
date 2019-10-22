@@ -11,6 +11,8 @@
 ## Running
 ```
 THEANO_FLAGS="device=cuda0, optimizer=fast_compile" python main.py -ds_name [YOUR_DATASET_NAME] -connection_type [AS|LF]
+If error occurs due to upcast to float64 do this below:
+THEANO_FLAGS="device=cuda0, optimizer=fast_compile, floatX=float32" python main.py -ds_name [YOUR_DATASET_NAME] -connection_type [AS|LF]
 ```
 
 ## Environment
